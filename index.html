@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meshed.it</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/76442c177e.js" crossorigin="anonymous"></script>
+    <script type="module" src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu_container">
+            <div class="menu_bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <span class="separator">|</span>
+            <div class="logo">
+                <a href="">
+                    <div class="logo_image">
+                        <img src="./image/logo icon.png" alt="">
+                    </div>
+                    <span>Meshed</span>
+                </a>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="project">
+                <span>Project Name</span>
+                <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="info_container">
+            <div class="user_list">
+                <div class="user" id="user1">
+                    <img src="./image/user_profile.jpg" alt="">
+                </div>
+                <div class="user" id="user2">
+                    <img src="./image/user_profile.jpg" alt="">
+                </div>
+                <div class="user" id="user3">
+                    <img src="./image/user_profile.jpg" alt="">
+                </div>
+            </div>
+            <span class="separator">|</span>
+            <div class="share">
+                <div class="share_btn">Share</div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="empty_box"></div>
+        <div class="main_box">
+            <div class="menu_box">
+                <div class="menu_icon" id="#1">
+                        <i class="fa-brands fa-unity"></i>
+                </div>
+                <div class="menu_icon" id="#2">
+                        <i class="fa-solid fa-person-circle-plus"></i>
+                </div>
+                <div class="menu_icon" id="#3">
+                        <i class="fa-sharp fa-solid fa-circle-question"></i>
+                </div>
+                <div class="menu_icon" id="#4">
+                        <i class="fa-solid fa-atom"></i>
+                </div>
+                <div class="menu_icon" id="#5">
+                        <i class="fa-solid fa-atom"></i>
+                </div>
+            </div>
+            <div class="view_box">
+            </div>
+            <div class="message_box">
+                <div class="feedback_box">
+                    <div class="feedback_header">
+                        <div class="feedback_title">
+                            <span>Feedback</span>
+                            <i class="fa-sharp fa-solid fa-clipboard"></i>
+                        </div>
+                        <div class="feedback_filter">
+                            <span>Newest first</span>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="feedback_message"></div>
+                </div>
+                <div class="chat_box">
+                    <div class="chat_header">
+                        <div class="chat_title">
+                            <span>Chat</span>
+                            <i class="fa-sharp fa-solid fa-comment"></i>
+                            <i class="fa-solid fa-caret-up" id="pointer"></i>
+                        </div>
+                        <div class="chat_filter">
+                            <span>Newest first</span>
+                            <i class="fa-sharp fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="chat_message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
