@@ -24,37 +24,44 @@ span {
         transition: ease-in-out 0.2s;
     }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+body {
+    margin: 0; padding: 0;
+    display: flex;
+}
 
-    width: 100vw; height: 4rem;
+.main {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: ; */
+}
+
+header.main_header {
+    width: 100%; height: 3rem;
 
     display: flex;
     align-items: center;
 
     box-shadow: 0px 0px 5px 0px rgb(0,0,0);
 }
-    header .separator {
+    .main_header .separator {
         margin: 0;
-        padding-bottom: 0.6rem;
+        padding-bottom: 0.3rem;
 
         font-size: 2rem;
         opacity: 0.3;
     }
-    header .menu_container {
+    .main_header .menu_header {
         box-sizing: border-box;
-        width: 28rem;
+        width: 3.8rem;
         height: 100%;
 
         display: flex;
         justify-content: center;
         align-items: center;
     }
-        .menu_container .menu_bar {
+        .menu_header .menu_bar {
             width: 5rem;
             display: flex;
             justify-content: center;
@@ -70,113 +77,58 @@ header {
                 opacity: 1;
                 transition: ease-in-out 0.2s;
             }
-        .menu_container .logo {
-            width: 12rem;
+    .main_header .logo_header {
+        margin-left: 0.5rem;
+        width: 8rem; height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .logo_header a {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
-            .logo a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .logo_image {
-                width: 2rem;
-                height: 2rem;
-            }
-            .logo_image img {
-                width: 100%;
-                border-radius: 2rem;
-            }
-            .logo span {
-                margin-left: 0.5rem;
-                font-size: 1.8rem;
-                font-weight: bolder;
-            }
-    header .main_container {
+        .logo_header .logo_image {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+        .logo_header .logo_image img {
+            width: 100%;
+            border-radius: 2rem;
+        }
+        .logo_header span{
+            padding-bottom: 0.1rem;
+            margin-left: 0.2rem;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+    .main_header .project_header {
         box-sizing: border-box;
-        width: 100%;
+        flex: 1;
         height: 100%;
 
         display: flex;
+        justify-content: center;
         align-items: center;
     }
-        .main_container .project {
+        .project_header .project_bar {
             width: 100%;
 
             text-align: center;
 
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: bold;
         }
-            .project button i {
-                font-size: 1rem;
-            }
-    header .info_container {
-        box-sizing: border-box;
-        width: 28rem;
-        height: 100%;
-
-        display: flex;
-        align-items: center;
-    }
-        .info_container .user_list {
-            flex: 1;
-            margin-right: 2%;
-            display: flex;
-            justify-content: space-around;
-        }
-            .user_list .user {
-                margin: 0 0.4rem;
-                width: 2.5rem; height: 2.5rem;
-            }
-            .user img {
-                width: 100%;
-                border-radius: 50%;
-            }
-        .info_container .share {
-            flex: 1;
-            height: 2.5rem;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-            .share .share_btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                width: 7rem;
-                height: 2.2rem;
-
-                font-size: 1rem;
-                font-weight: bold;
-                color: white;
-                text-align: center;
-
-                background-color: rgb(98, 148, 224);
-                border-radius: 2.2rem;
-
-                opacity: 0.7;
-            }
-.main {
-    width: 100vw; height: 100vh;
+    
+.main_container {
+    width: 100%;
+    flex: 1;
     margin: 0; padding: 0;
     display: flex;
-    flex-direction: column;
 }
-    .main .empty_box {
-        height: 4rem;
-    }
-    .main .main_box {
-        flex: 1;
-
-        display: flex;
-    }
-        .main_box .menu_box {
-            width: 6rem;
+        .menu_box {
+            width: 4rem;
             padding-top: 2rem;
 
             display: none;
@@ -201,72 +153,25 @@ header {
                     opacity: 1;
                     transition: ease-in-out 0.2s;
                 }
-        .main_box .view_box {
+        .view_box {
+            width: 100%;
             flex: 1;
             background-color: black;
         }
-        .main_box .message_box {
-            width: 20rem;
+.chat_box {
+    width: 20rem; height: 100vh;
+}
 
-            display: flex;
-            flex-direction: column;
-        }
-            .message_box .feedback_box {
-                width: 100%; 
-                flex: 1;
-                background-color: rgb(237, 237, 237);
-
-                display: flex;
-                flex-direction: column;
-            }
-                .feedback_header {
-                    padding: 0 10px 0 10px;
-                    height: 2.5rem;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    box-shadow: 0px 0px 1px 0px rgb(0,0,0);
-                }
-                    .feedback_title {
-                        font-weight: bolder;
-                    }
-                    .feedback_title i {
-                        font-size: 0.8rem;
-                    }
-                    .feedback_filter {
-                        font-size: 0.5rem;
-                    }
-                .feedback_message {
-                    height: 100%;
-                }
-            .message_box .chat_box {
-                width: 100%; height: 1.5rem;
-
-                display: flex;
-                flex-direction: column;
-
-                z-index: 1;
-            }
-                .chat_header {
-                    padding: 0 10px 0 10px;
-                    height: 2.5rem;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    box-shadow: 0px 0px 1px 0px rgb(0,0,0);
-                }
-                    .chat_title {
-                        font-weight: bolder;
-                    }
-                    .chat_title i {
-                        font-size: 0.8rem;
-                    }
-                    .chat_filter {
-                        font-size: 0.5rem;
-                    }
-                .chat_message {
-                    height: 100%;
-                }
+/* TalkJS Dom */
+/* https://talkjs.com/docs/ */
+/* https://talkjs.com/dashboard/app/tMecoDjL/themes/default 에서 Themes 수정 */
+    
+    #talkjs-container {
+        width: 100%; 
+        margin: 0; 
+        padding: 0; 
+        height: 100%;
+    }
 
 /* 반응형 */
 @media screen and (max-width: 500px) {
